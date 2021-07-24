@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import PicUploadNoCrop from './components/cropper';
-import myimg from './{image-name}.png';
+import myimg from './gun.png';
 
 function App() {
   return (

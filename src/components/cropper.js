@@ -4,17 +4,14 @@ import "cropperjs/dist/cropper.min.css"
 import "./cropper.css"
 
 class ImgCropper extends Component {
-
   constructor() {
     super();
     this.state = {
       imgPreview: "",
-      // 
       // aspectRatio: 16 / 9
     }
     this.imageElm = React.createRef();
   }
-
   componentDidMount() {
     const cropper = new Cropper(this.imageElm.current, {
       // properties
@@ -29,14 +26,11 @@ class ImgCropper extends Component {
       }
     })
   }
-  // updateRatio() {
-  //   this.setState()
-  // }
   render() {
     return (
       <div>
         <div className="img-container">
-          <img ref={this.imageElm} src={this.props.src} alt="myimage" />
+          <img ref={this.imageElm} src={this.props.src} alt="test" />
         </div>
         {/* <button onChange={updateRatio}></button> */}
         {/* Preview */}
